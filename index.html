@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"><!-- this meta tag is defining encoding of the text used in my website, basicxally meta tags are placed inside the head of the html, it is used for configration of data about this particular webpage -->
+		<meta name="description" content="Programming Blog"><!-- this is something that can be used by search engines to figure out what kind of website u have, so to scrap data from your website -->
+		<meta name="author" content="Tejasvi">
+		<meta name="Keyboards" content="HTML, Basic tags cheat sheet">
+		<meta name="viewport", content="width=device-width, initial-scale=1.0"><!-- this controls how your website is displayed on other devices -->
+		<title>Tejas.Dev</title>
+	</head>
+	<body style="background-color: lightblue">
+		<h1 style="color: yellow; background-color: grey;">Tejasvi/<br/>/Developer</h1>
+		<hr/>
+		<hr/>
+		<p><big>Paragraph</big><big> <b><i>Tag</i></b></big></p>
+		<p>Water's Chemical formula = H<sub>2</sub>O</p>
+		<p>10<sup>2</sup> = 100</p>
+		This is a 
+			comment
+		<p style="color: yellow; background-color: black;">What the Heck</p>
+		style tag is for styling
+		<p> paragraph tag
+		<sub>subscritp tag</sub>
+		<sup>superscript tag</sup>	
+		<big><small>big for bigger text and small for smaller text</small></big>
+
+		<!--
+		Now our web page is divided into 3 sections the header, the main and the footer,-- header is for heading like navigation menu, main for the main webpage and the footer
+		for the foot of web page(generally where we see extra links to social websites and extrass)	-->
+
+		<header> 
+			<nav><!--Navigation tag , We can place navigation links here--></nav>
+		</header>
+		<main>
+			<article>
+				<!-- Article tag, Like we are making a blogging website ,so we want to display Content as Articles, Obviously placed in main-->
+				<section>
+					<!-- Section Tag used is For Sectioning of an Article and we can make as many sections as we want, and also can put<h1>header(any headers h1 h2 h3 ..) in sections</h1>-->
+					<aside><!-- using this tag will display info but we put that info in here which is not directly related to our website, Like advertisments--></aside>
+				</section>
+			</article>		
+			<a href="http://www.google.com" target = "_blank"><h1>Google's Homepage</h1></a><!-- Link tag but we can also put other html tags in this, _blank will force the browser to open link in new tab rather than overwriting on your page-->	
+			<a href="page2.html">Page 2</a><!-- We can also redirect to our custom made page by mentioning its name, but that html file must be present in the same directory -->
+			<a href="First/page3.html">Page 3</a><!-- this is how we can include a html file present in other directory -->
+			<a href="file.jpeg"></a><!-- This is how we can include an image or a file like pdf or a word document -->
+			<br>
+			<img width="100" height="100" src="" alt="Whatever tag we can write here will show in place of the unloaded image"/><!-- First of all we have to give the location of the image, it can be on internet or your PC , we can also define sizes in pixel, width and height.
+			We have to maintain the aspect ratio of the picture so that the picture doent look horrible.
+			NOTE: In addition to setting both the W & H, you can choose to set only one either of W & H and the HTML will automatically resize the picture to the perfect aspect ratio.
+			"alt" is used if the images we used is not dilplayed or loaded properly-->
+			<br>
+			<a href="page2.html">
+				<img src="" alt = "You can link the links with images and make them clickable">
+			</a>
+			<br>
+			<br>
+			<video src="C:\Friends\Friends Season 05 (1080p x265 Joy)/Friends_S05E01_1080p_BluRay_DeeJayAhmed_SITEMOVIE.mkv" autoplay loop poster="image_file" controls width = "300"=>Any text you put here will get displayed if the video doesnt work </video><!-- controls will make the video controls.
+			we can also set size of the video 
+			poster attribute will enable us to put a thumbnail for our video
+			autoplay attribute will make this video to run automatically
+			loop will make video looping around if the video gets finished-->
+
+			<br><br>
+			<iframe src="youtube video link"></iframe><!--We can go to youtube and click on share , there we can see an option of embedding the vide we can select that and that will provide us with the html code to include in our program and various other options, we can also resize the video and there are various other options -->
+			<!-- -------------Lists---------------- -->
+			<ul>
+				<li><a href="#">Apples</a></li>
+				<li>Oranges</li>
+				<li>Bananas</li>
+			</ul><!-- <ul>tage means unordered list and we can also use other tags insie the lists</ul> -->
+			<ol type="A">
+				<li><a href="#">Apples</a></li>
+				<li>Oranges</li>
+				<li>Bananas</li>
+			</ol><!-- <ol>means unordered list and we can also define its type, whether to start from 123 or abc</ol>
+			we can also append/nest lists into list -->
+			<dl>
+				<dt>Apples</dt>
+				<dd>They are red</dd>
+			</dl><!-- <dl> is description list</dl>  <dt>descrption term</dt> and <dd>descption of description term</dd>-->
+			<!-- -----------------Tables----------------- -->
+			<table>
+				<thead>
+					<caption><h3>List of Numbers</h3></caption>
+					<tr>
+						<th>one</th>
+						<th>two</th>
+						<th>three</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td colspan="3">one</td>
+						<td>two</td>
+						<td>three</td>
+					</tr>
+					<tr>
+						<td>four</td>
+						<td>five</td>
+						<td>six</td>
+					</tr>
+				</tbody>
+			</table><!-- tr is table row , td = table data, <caption>table cation</caption> colspan is coloumn span-->
+			<!--  -----------------------divs(container tags)-----------------------  -->
+
+			<a href="#">link1</a>
+			<a href="#">link2</a><!-- these are inline elements -->
+			<hr>
+			<p>Paragraph1</p>
+			<p>Paragraph2</p><!-- block elements, they  take entire row space and force next element to next line -->
+
+			<!-- spans are inline containers and divs are block containers -->
+			<span>span1</span>
+			<span>span2</span>
+			<hr>
+			<div>div1</div>
+			<div>div2</div>
+			<!-- ========form===============it is a wrapper for these inputs -->
+			<form>
+
+				<!-- ---------------------Input------------------------ -->
+				<input type="text" name="TextBox" value="Enter username" /><br>
+				<input type="password" name="password"/><br>
+				<!-- value tag will define some tag prior , input type password will let the users to type text like we type in password filed (hidden) -->
+				<!-- now we will look textarea which is big text area and we can actually resize it, we can give it specified number of rows and coloumns -->
+				<textarea rows="10" cols="30">
+					
+				</textarea><br>
+				<input type="date" name="date"/><br>
+
+				<input type="checkbox" name="checkbox"><br>
+				<input type="checkbox" name="checkbox"><br>
+
+				<input type="radio" name="1"/><br>
+				<input type="radio" name="1"/><br><!-- if radio buttons have same name u can only choose one of them -->
+
+				<input type="submit" name="submit"/>
+			</form><br>
+			<!-- ================iframe================= -->
+			<iframe src="#" frameborder="0", width="100">iframe</iframe><!-- you can embed an entire website in a link, text, text is used when some browser is unable to show iframe, just rememer some websites doesn't allow you to use theri webpage as the iframe -->
+		</main>
+		<footer>
+			
+		</footer>
+
+	</body>
+</html>
